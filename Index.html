@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Middeniye Dhammasena Thero | Buddhist Monk & Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <i class="fas fa-dharmachakra"></i>
+        <span>M.D. Thero</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-rings">
+      <div class="hero-ring hero-ring-1"></div>
+      <div class="hero-ring hero-ring-2"></div>
+      <div class="hero-ring hero-ring-3"></div>
+    </div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <i class="fas fa-spa"></i>
+        <span>Buddhist Monk & Student</span>
+      </div>
+      <h1 class="hero-name reveal">
+        Middeniye<br>
+        <span class="gold-text">Dhammasena Thero</span>
+      </h1>
+      <p class="hero-typing reveal">
+        <span id="typingText"></span><span class="typing-cursor">|</span>
+      </p>
+      <p class="hero-description reveal">
+        Walking the path of Dhamma with mindfulness and modern creativity
+      </p>
+      <div class="hero-buttons reveal">
+        <a href="#about" class="btn btn-primary">
+          <span>Explore</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <span>Contact Me</span>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator reveal">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-icon"><i class="fas fa-spa"></i></span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="image-frame">
+            <img src="https://z-cdn-media.chatglm.cn/files/1deecc6d-fa25-4733-9274-bd6bfcea44e9.jpg?auth_key=1877729336-2aee0c5c439a40548563d89be43d3f4c-0-95e8441b2e5e90e441a89923fdcefde0" alt="Venerable Middeniye Dhammasena Thero" loading="lazy">
+          </div>
+          <div class="image-decoration"></div>
+        </div>
+        <div class="about-content">
+          <h3 class="about-subtitle reveal">Venerable Middeniye Dhammasena Thero</h3>
+          <p class="about-text reveal">
+            Blessed with the opportunity to walk the noble path of the Buddha's teachings, I am Middeniye Dhammasena Thero. As a Buddhist monk and dedicated student, I strive to embody the principles of mindfulness, compassion, and wisdom in every aspect of life.
+          </p>
+          <p class="about-text reveal">
+            Beyond my spiritual practice, I have cultivated a deep passion for digital creativity. Through web design, photography, and graphic design, I find unique ways to share the beauty of Dhamma and the natural world — bridging ancient wisdom with modern expression.
+          </p>
+          <div class="about-facts">
+            <div class="fact-item reveal">
+              <div class="fact-icon"><i class="fas fa-birthday-cake"></i></div>
+              <div>
+                <span class="fact-label">Date of Birth</span>
+                <span class="fact-value">December 02, 2003</span>
+              </div>
+            </div>
+            <div class="fact-item reveal">
+              <div class="fact-icon"><i class="fas fa-dharmachakra"></i></div>
+              <div>
+                <span class="fact-label">Role</span>
+                <span class="fact-value">Buddhist Monk & Student</span>
+              </div>
+            </div>
+            <div class="fact-item reveal">
+              <div class="fact-icon"><i class="fas fa-heart"></i></div>
+              <div>
+                <span class="fact-label">Interests</span>
+                <span class="fact-value">Web Design, Photography, Art</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-icon"><i class="fas fa-palette"></i></span>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal" style="--delay: 0s">
+          <div class="skill-icon-wrapper">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="skill-title">Web Design</h3>
+          <p class="skill-description">
+            Creating clean, responsive, and visually appealing websites that blend modern aesthetics with intuitive user experience.
+          </p>
+          <div class="skill-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Responsive</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" style="--delay: 0.15s">
+          <div class="skill-icon-wrapper">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3 class="skill-title">Photography</h3>
+          <p class="skill-description">
+            Capturing moments of beauty in nature, architecture, and daily life through a mindful and artistic lens.
+          </p>
+          <div class="skill-tags">
+            <span>Nature</span>
+            <span>Portrait</span>
+            <span>Editing</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" style="--delay: 0.3s">
+          <div class="skill-icon-wrapper">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3 class="skill-title">Graphic Design</h3>
+          <p class="skill-description">
+            Designing visual content that communicates ideas effectively, from digital art to branded materials and social media graphics.
+          </p>
+          <div class="skill-tags">
+            <span>Photoshop</span>
+            <span>Branding</span>
+            <span>Vector</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-icon"><i class="fas fa-images"></i></span>
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" style="--delay: 0s" onclick="openLightbox(this)">
+          <img src="https://z-cdn-media.chatglm.cn/files/1deecc6d-fa25-4733-9274-bd6bfcea44e9.jpg?auth_key=1877729336-2aee0c5c439a40548563d89be43d3f4c-0-95e8441b2e5e90e441a89923fdcefde0" alt="Monk in Nature" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Monk in Nature</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" style="--delay: 0.1s" onclick="openLightbox(this)">
+          <img src="https://z-cdn-media.chatglm.cn/files/48f3c58c-fe11-4bfe-b96c-a142b7915960.jpg?auth_key=1877729336-47f27f9d0e1f49d4a5d313e8c506bb05-0-6fddbc2cdeef38364234597f74045d22" alt="Pink Lotus Flower" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Pink Lotus</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" style="--delay: 0.2s" onclick="openLightbox(this)">
+          <img src="https://picsum.photos/seed/temple-dawn/600/400.jpg" alt="Temple at Dawn" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Temple at Dawn</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" style="--delay: 0.3s" onclick="openLightbox(this)">
+          <img src="https://picsum.photos/seed/peaceful-lake/600/400.jpg" alt="Peaceful Lake" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Peaceful Lake</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" style="--delay: 0.4s" onclick="openLightbox(this)">
+          <img src="https://picsum.photos/seed/bamboo-path/600/400.jpg" alt="Bamboo Path" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Bamboo Path</span>
+          </div>
+        </div>
+        <div class="gallery-item reveal" style="--delay: 0.5s" onclick="openLightbox(this)">
+          <img src="https://picsum.photos/seed/zen-garden55/600/400.jpg" alt="Zen Garden" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Zen Garden</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-icon"><i class="fas fa-envelope"></i></span>
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-content reveal">
+        <div class="contact-card">
+          <div class="contact-decoration">
+            <i class="fas fa-spa"></i>
+          </div>
+          <h3 class="contact-heading">Let's Connect</h3>
+          <p class="contact-text">
+            Feel free to reach out for collaborations, Dhamma discussions, or just a friendly conversation. I'm always happy to connect with like-minded individuals.
+          </p>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <i class="fab fa-facebook-f"></i>
+              <span>Find me on Facebook</span>
+            </div>
+          </div>
+          <a href="https://www.facebook.com/share/v/1B7uxAFsCs/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-contact">
+            <i class="fab fa-facebook-f"></i>
+            <span>Visit Facebook</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fas fa-dharmachakra"></i>
+          <span>M.D. Thero</span>
+        </div>
+        <p class="footer-quote">
+          "Peace comes from within. Do not seek it without." — Buddha
+        </p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">
+          &copy; 2025 Middeniye Dhammasena Thero. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+      <i class="fas fa-times"></i>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
